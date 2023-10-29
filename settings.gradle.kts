@@ -17,3 +17,4 @@ dependencyResolutionManagement {
 rootProject.name = "SeeYou"
 include(":androidApp")
 include(":shared")
+include(":benchmark")
