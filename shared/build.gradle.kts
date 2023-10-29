@@ -14,7 +14,7 @@ kotlin {
             }
         }
     }
-    
+
     listOf(
         iosX64(),
         iosArm64(),
@@ -28,7 +28,11 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                //put your multiplatform dependencies here
+                implementation(libs.ktor.client.core)
+                implementation (libs.mvikotlin)
+                implementation (libs.mvikotlin.main)
+                implementation (libs.mvikotlin.logging)
+                implementation (libs.mvikotlin.timetravel)
             }
         }
         val commonTest by getting {
